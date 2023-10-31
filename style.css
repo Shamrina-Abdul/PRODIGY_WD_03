@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+body {
+  
+  /*ackground-color: beige;
+  
+  background-size: cover;*/
+  
+  background: rgb(208,130,225);
+  background: linear-gradient(176deg, rgba(208,130,225,1) 0%, rgba(69,57,161,1) 100%);
+
+}
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  padding: 22px 12%;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  border-bottom: 1px solid transparent;
+  text-align:center;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  margin : 0 auto;
+}
+
+
+
+.name {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navlist {
+  display: flex;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.45s ease;
+  margin: 0 25px;
+  cursor: pointer;
+}
+
+.navlist li {
+  margin: 0 35px;
+}
+
+.navlist a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.navlist a:hover {
+  color: #af52b8;
+}
+
+.button {
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 40px;
+  padding: 12px 18px;
+  background-color: rgb(28, 15, 6);
+  border: 2px solid #633d83;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+.container {
+  /* margin-top: 12rem; */
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+}
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  position: relative;
+}
+.line {
+  background-color: rgb(255, 255, 255);
+  width: 0;
+  height: 3px;
+  position: absolute;
+  transition: width 1s ease-in-out;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  cursor: pointer;
+  border: 3px solid #ccd1d8;
+}
+.bt-0 {
+  border-top: 0;
+}
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+.game-info {
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
+.info {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 4px;
+  text-align: center;
+}
+.btn {
+  margin: 20px 140px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #000000;
+}
+.imgbox img {
+  width: 0;
+  transition: width 1s ease-in-out;
+  margin-left: 6rem;
+}
